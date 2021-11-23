@@ -1,0 +1,61 @@
+.header {
+    background-color: $text-dark-color;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 457px) 216px minmax(auto, 457px) 1fr;
+    &__links {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding-left: 10px;
+    }
+    &__link {
+        @include font();
+    }
+    &__logo {
+        grid-column: 3/4;
+        align-self: center;
+    }
+    &__img {
+        fill: $text-light-color;
+    }
+    &__right {
+        grid-column: 4/5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
+    }
+    &__search {
+        &-img {
+            fill: $text-light-color;
+            margin-bottom: -5px;
+        }
+        &-field {
+            background-color: transparent;
+            @include font();
+            padding: 4px 13px;
+            width: 94px;
+            margin-bottom: 5px;
+            &::placeholder {
+                @include font();
+            }
+        }
+    }
+    &__profile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__registration {
+        @include font();
+    }
+    &__person {
+        margin: 0 25px 0 40px;
+        &-img {
+            fill: $text-light-color;
+        }
+    }
+    &__likes-img {
+        fill: $text-light-color;
+    }
+}

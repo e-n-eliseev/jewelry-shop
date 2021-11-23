@@ -5,8 +5,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-@mixin font($color: $text-light-color, $fs: 18px, $fw: normal) {
+@mixin font($color: $text-light-color, $fs: 14px, $fw: normal) {
+    color: $color;
     font-size: $fs;
     font-weight: $fw;
-    color: $color;
 }

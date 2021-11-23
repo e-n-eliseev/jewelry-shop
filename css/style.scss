@@ -2,5 +2,14 @@
 @import "font";
 @import "vars";
 @import "mixins";
+@import "header";
+@import "main";
 //font-family: 'Noto Serif', serif;
 //font-weight: bold;
+* {
+    font-family: "Gilroy", "Sans Serif";
+}
+.wrapper {
+    display: grid;
+    grid-template: minmax(111px, auto) 1fr minmax(872px, auto) / 1fr;
+}
