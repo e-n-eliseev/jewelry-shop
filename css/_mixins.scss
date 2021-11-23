@@ -1,0 +1,12 @@
+@mixin btn($bg: $text-dark-color, $pv: 15px, $pg: 35px) {
+    background-color: $bg;
+    padding: $pv $pg;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+@mixin font($color: $text-light-color, $fs: 18px, $fw: normal) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
