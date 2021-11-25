@@ -1,0 +1,27 @@
+.main__shops {
+    background: center/cover url(../img/bg-shops.png) no-repeat;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 10px;
+    }
+    &-question {
+        @include font($text-light-color, 21px, normal);
+    }
+    &-heading {
+        font-family: Noto Serif;
+        @include font($text-light-color, 30px, bold);
+        margin: 15px 0 45px 0;
+    }
+    &-text {
+        @include font($text-light-color, 18px, normal);
+        margin-bottom: 60px;
+        width: 730px;
+        text-align: center;
+    }
+    &-btn {
+        @include font($text-dark-color, 18px, normal);
+        @include btn($text-light-color);
+    }
+}

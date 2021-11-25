@@ -1,0 +1,48 @@
+.main__blogs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: center;
+    &-text {
+        @include font($text-dark-color, 21px, normal);
+        text-align: center;
+    }
+    &-heading {
+        font-family: Noto Serif;
+        @include font($text-dark-color, 30px, bold);
+        margin: 15px 0 60px 0;
+        text-align: center;
+    }
+    &-items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &-item {
+        width: 350px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 70px 35px;
+        justify-content: flex-end;
+        &--watch {
+            background: center/cover url(../img/how-watch.png) no-repeat;
+        }
+
+        &--zapinki {
+            background: center/cover url(../img/how-zaponki.png) no-repeat;
+        }
+        &--ring {
+            background: center/cover url(../img/how-ring.png) no-repeat;
+        }
+        &-text {
+            @include font($text-light-color, 21px, normal);
+            text-align: center;
+        }
+    }
+    &-link {
+        @include font($text-light-color, 21px, 500);
+        @include btn();
+        margin-top: 60px;
+    }
+}

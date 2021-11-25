@@ -2,6 +2,7 @@
 @import "font";
 @import "vars";
 @import "mixins";
+@import "templates";
 @import "header";
 @import "main";
 //font-family: 'Noto Serif', serif;
@@ -12,4 +13,8 @@
 .wrapper {
     display: grid;
     grid-template: minmax(111px, auto) 1fr minmax(872px, auto) / 1fr;
+}
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
 }

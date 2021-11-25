@@ -1,0 +1,12 @@
+.main {
+    display: grid;
+    grid-template-rows: minmax(839px, auto) minmax(1072px, auto) minmax(542px, auto) minmax(744px, auto) minmax(
+            1116px,
+            auto
+        );
+    background-color: $main-bg-color;
+}
+@import "main__label";
+@import "main__categories";
+@import "main__shops";
+@import "main__blogs";

@@ -1,0 +1,48 @@
+.main__label {
+    background: center/cover no-repeat url(../img/main.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    &-heading {
+        grid-column: 2/3;
+        font-family: Noto Serif;
+        @include font($text-light-color, 36px, bold);
+    }
+    &-btn {
+        margin: 50px 0 80px 0;
+        @include btn();
+        @include font($text-light-color, 18px);
+        border: 1px solid $text-light-color;
+    }
+    &-separator {
+        width: 100wh;
+        height: 1px;
+        background-color: $text-light-color;
+    }
+    &-labels {
+        padding: 30px 10px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-img {
+        &::after {
+            position: absolute;
+            content: "";
+            margin-left: 15px;
+            width: 1px;
+            height: 60px;
+            background-color: $text-light-color;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}

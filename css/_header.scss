@@ -27,6 +27,10 @@
         padding-right: 10px;
     }
     &__search {
+        &-btn {
+            border: none;
+            background-color: transparent;
+        }
         &-img {
             fill: $text-light-color;
             margin-bottom: -5px;
