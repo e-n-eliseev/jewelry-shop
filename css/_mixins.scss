@@ -10,3 +10,9 @@
     font-size: $fs;
     font-weight: $fw;
 }
+%grid-body {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

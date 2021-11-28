@@ -1,8 +1,8 @@
 .main__categories {
     padding: 100px 10px 120px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &-body {
+        @extend %grid-body;
+    }
     &-catalog-link {
         @include font($text-dark-color, 21px, normal);
     }

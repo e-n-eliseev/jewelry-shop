@@ -1,9 +1,7 @@
 .main__shops {
     background: center/cover url(../img/bg-shops.png) no-repeat;
-    &-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &-body {
+        @extend %grid-body;
         padding: 100px 10px;
     }
     &-question {
