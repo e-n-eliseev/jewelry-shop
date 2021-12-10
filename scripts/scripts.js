@@ -14,13 +14,20 @@ btnArea.addEventListener('click', ({ target }) => {
 //кнопка воспроизведения видео
 const socialSamples = document.querySelector('.main__social-samples');
 socialSamples.addEventListener('click', ({ target }) => {
-    if (target.parentElement.classList.value !== 'main__social-video-play') {
+    if (!target.closest('.main__social-btn')) {
         return;
     }
-    if (target.parentElement.nextElementSibling.paused) {
-        target.parentElement.nextElementSibling.play();
+    const hiddenSvg = target.closest('.main__social-btn').querySelector('.main__social-video-play-hidden');
+    const svg = target.closest('.main__social-btn').querySelector('.main__social-video-play');
+    hiddenSvg.classList.remove('main__social-video-play-hidden');
+    hiddenSvg.classList.add('main__social-video-play');
+    svg.classList.add('main__social-video-play-hidden');
+    svg.classList.remove('main__social-video-play');
+
+    if (target.closest('.main__social-btn').nextElementSibling.paused) {
+        target.closest('.main__social-btn').nextElementSibling.play();
     } else {
-        target.parentElement.nextElementSibling.pause();
+        target.closest('.main__social-btn').nextElementSibling.pause();
     }
 });
 
