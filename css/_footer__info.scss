@@ -1,0 +1,110 @@
+.footer__info {
+    display: grid;
+    @extend %container;
+    padding-top: 80px;
+}
+.info {
+    @extend %grid-body;
+    padding: 0 10px;
+    &__top {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 45px;
+        & > div {
+            @extend %flex-vert;
+            width: 255px;
+        }
+    }
+    &__heading {
+        @include font($text-dark-color, 18px, 500);
+        letter-spacing: 0.1em;
+        line-height: 140%;
+        text-transform: uppercase;
+        border-bottom: 2px solid $text-dark-color;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    &__links,
+    &__text {
+        @include font($text-dark-color, 14px, normal);
+        line-height: 150%;
+    }
+    &__text {
+        margin-bottom: 22px;
+    }
+    &__link {
+        margin-bottom: 15px;
+        & > a {
+            @include font($text-dark-color, 14px, normal);
+        }
+        &--figma {
+            border-bottom: 1px solid $text-dark-color;
+            padding-bottom: 1px;
+        }
+    }
+    &__contact-link {
+        margin-bottom: 15px;
+        &--phone {
+            ::before {
+                content: url(../img/old-phone.svg);
+            }
+        }
+        &--email {
+            ::before {
+                content: url(../img/email.svg);
+            }
+        }
+        & > ::before {
+            position: absolute;
+            top: 1px;
+            left: -38px;
+        }
+        & > a {
+            @include font($text-dark-color, 14px, normal);
+            position: relative;
+            left: 38px;
+        }
+    }
+    &__link,
+    &__contact-link {
+        :hover {
+            text-decoration: underline;
+            color: $text-hover-red;
+        }
+    }
+    &__logos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    &__logos-img {
+        width: 45px;
+        height: 30px;
+    }
+    &__social-links {
+        display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
+    }
+    &__social-link {
+        font-size: 21px;
+    }
+    &__social-link > a {
+        color: $text-dark-color;
+        &:hover {
+            color: $text-hover-red;
+        }
+    }
+    .info__bottom {
+        border-top: 2px solid $text-dark-color;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .info__polices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -21,5 +21,6 @@
     &-btn {
         @include font($text-dark-color, 18px, normal);
         @include btn($text-light-color);
+        @extend %hover-btn-white;
     }
 }

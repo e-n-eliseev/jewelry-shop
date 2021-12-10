@@ -5,6 +5,7 @@
     }
     &-catalog-link {
         @include font($text-dark-color, 21px, normal);
+        @extend %hover;
     }
     &-heading {
         font-family: Noto Serif;
@@ -44,16 +45,24 @@
             transform: translateY(5px);
             background-color: $text-dark-color;
             color: $text-light-color;
-            &::after {
-                opacity: 0;
-            }
         }
         &--active {
             background-color: $text-dark-color;
             color: $text-light-color;
             transform: translateY(5px);
+        }
+        @extend %hover-btn;
+        &:active,
+        &--active,
+        &:hover {
             &::after {
-                display: none;
+                opacity: 0;
+            }
+            &::after {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 0;
             }
         }
     }
@@ -79,6 +88,7 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         align-self: center;
+        @extend %hover;
     }
     &-item--ring {
         background: center/cover url(../img/rings.png) no-repeat;

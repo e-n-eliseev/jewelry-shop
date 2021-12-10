@@ -1,8 +1,11 @@
 .footer__subscribe {
     background: center/cover url("../img/bg-shops.png") no-repeat;
     padding: 100px 0 120px 0;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
     &-body {
         @extend %grid-body;
+        padding: 0 10px;
     }
     &-text {
         @include font($text-light-color, 21px, normal);
@@ -51,10 +54,17 @@
         &::placeholder {
             @include font(rgba(51, 51, 51, 0.5), 14px, 500);
         }
+        &:hover::placeholder {
+            color: $text-hover-red;
+        }
+        &:focus {
+            box-shadow: 0 0 20px $text-dark-color;
+        }
     }
     &-btn {
         width: 159px;
         @include btn();
         @include font($text-light-color, 14px, 500);
+        @extend %hover-btn;
     }
 }

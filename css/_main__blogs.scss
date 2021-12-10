@@ -45,5 +45,6 @@
         @include font($text-light-color, 21px, 500);
         @include btn();
         margin-top: 60px;
+        @extend %hover-btn;
     }
 }

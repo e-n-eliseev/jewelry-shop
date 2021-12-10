@@ -19,6 +19,7 @@
         @include btn();
         @include font($text-light-color, 18px);
         border: 1px solid $text-light-color;
+        @extend %hover-btn-white;
     }
     &-separator {
         width: 100wh;

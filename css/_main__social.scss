@@ -38,6 +38,10 @@
         background-color: transparent;
         opacity: 0;
         transition: 0.4s;
+        border-radius: 50%;
+        &:hover {
+            box-shadow: 0 0 50px $text-light-color;
+        }
     }
     &-video-play {
         fill: $btn-border-color;
