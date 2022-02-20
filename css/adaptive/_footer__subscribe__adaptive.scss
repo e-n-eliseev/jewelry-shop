@@ -1,0 +1,21 @@
+@media (max-width: 850px) {
+    .footer__subscribe {
+        &-info {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .footer__subscribe {
+        &-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 355px;
+        }
+        &-input {
+            margin: 15px;
+        }
+    }
+}

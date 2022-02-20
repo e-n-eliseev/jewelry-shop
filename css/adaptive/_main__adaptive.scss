@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    .main {
+        grid-template-rows: minmax(639px, auto) minmax(1072px, auto) minmax(542px, auto) minmax(744px, auto) minmax(
+                745px,
+                auto
+            );
+    }
+}

@@ -10,12 +10,14 @@
     &-text {
         @include font($text-light-color, 21px, normal);
         line-height: 140%;
+        text-align: center;
     }
     &-heading {
         padding: 15px 0 60px 0;
         font-family: Noto serif;
         line-height: 41px;
         @include font($text-light-color, 30px, bold);
+        text-align: center;
     }
     &-info {
         display: flex;
@@ -68,3 +70,4 @@
         @extend %hover-btn;
     }
 }
+@import "./adaptive/footer__subscribe__adaptive";

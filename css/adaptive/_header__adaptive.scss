@@ -1,0 +1,33 @@
+@media (max-width: 1100px) {
+    .header {
+        &__burger {
+            display: block;
+            margin: 0 34px 0 40px;
+        }
+        &__form,
+        &__account {
+            display: none;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .header {
+        &__links {
+            gap: 0;
+            justify-content: space-between;
+        }
+        &__logo {
+            margin-left: 40px;
+        }
+    }
+}
+@media (max-width: 650px) {
+    .header {
+        &__links {
+            display: none;
+        }
+        &__logo {
+            margin-left: 15px;
+        }
+    }
+}

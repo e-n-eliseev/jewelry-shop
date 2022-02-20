@@ -1,8 +1,11 @@
 .main__label {
-    background: center/cover no-repeat url(../img/main.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    &__background {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: center/cover no-repeat url(../img/main.png);
+    }
     &-top {
         display: flex;
         flex-direction: column;
@@ -47,3 +50,4 @@
         }
     }
 }
+@import "./adaptive/main__label__adaptive";
